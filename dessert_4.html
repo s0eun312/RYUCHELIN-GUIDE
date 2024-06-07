@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RYUCHELIN GUIDE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/general.css" rel="stylesheet"><!--GENERAL-->
+    <link href="css/food_sub2.css" rel="stylesheet"><!--PROFILE-->
+    <style>
+        a:link, a:hover, a:active, a:visited {
+            color: #a89e65;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h3 id="logo">
+        <a class="logoLink" href="index.html">RYUCHELIN GUIDE</a>
+    </h3>
+    <div id="nav_menu">
+        <div class="navBtn">
+            <p>MENU</p>
+            <button>
+                <img src="img/navBtn.png">
+            </button>
+        </div>
+    </div>
+</header><!-------header------->
+
+<main>
+    <nav id="nav_list">
+        <ul>
+            <li class="info">
+                <a class="navLink" href="info.html">RYUCHELIN info</a>
+            </li>
+            <li class="profile">
+                <a class="navLink" href="profile.html">RYU's Profile</a>
+            </li>
+            <li class="food">
+                <a class="navLink" href="food_index.html">Food Restaurant</a>
+            </li>
+            <li class="dessert">
+                <a class="navLink" href="dessert_index.html">Dessert Cafe</a>
+            </li>
+            <li class="recommend">
+                <a class="navLink" href="recommend.html">Recommend For Me</a>
+            </li>
+        </ul>
+    </nav><!--nav-->
+    <button id="topBtn">
+        <img src="img/topBtn.png">
+    </button><!--topBtn-->
+
+    <div id="contents">
+        <div class="back">
+            <h4>돌아가기</h4>
+            <img src="img/food/left_arrow.png">
+        </div>
+        <section class="review">
+            <img class="image" src="img/dessert/dessert4.png">
+            <article class="text">
+                <h3>코코로카라</h3>
+                <p class="location">
+                    <a href="https://www.instagram.com/_kokorokara_/">인스타그램</a> | 서울 마포구 연남로1길 41
+                </p>
+                <p class="food_menu">
+                    대표 메뉴 : 미쯔말차 푸딩, 바나나 푸딩, 바나나오레오 푸딩
+                </p>
+                <p class="star">
+                    맛 ⭐ ⭐ ⭐ ⭐<br>
+                    비주얼 ⭐ ⭐ ⭐ ⭐<br>
+                    서비스 ⭐ ⭐
+                </p>
+                <p class="review_text">
+                    다양한 맛의 브레드 푸딩을 파는 카페<br>
+                    푸딩 1개가 꽤 크고 양도 많은 편<br>
+                    크림이 묵직하고 진한데, 안의 촉촉한 빵과 잘 어울리고<br>
+                    그 외 토핑들도 많이 들어가 있어 식감이 재밌다<br>
+                    개인적으로는 미쯔말차를 제일 추천!<br>
+                    푸딩 외에도 마들렌이랑 쿠키도 파는데 마들렌도 맛있다<br>
+                    음료는 주로 커피랑 에이드 위주
+                </p>
+            </article>
+        </section>
+    </div><!--contents-->
+</main><!-------main------->
+
+<footer>
+    <div class="footer_left">
+        <h3 class="footer_logo">RYUCHELIN GUIDE</h3>
+        <p class="class_name">
+            Class. 고급웹퍼블리싱&nbsp;&nbsp;&nbsp;
+            |&nbsp;&nbsp;&nbsp;Prof. 이수경 교수님&nbsp;&nbsp;&nbsp;
+            |&nbsp;&nbsp;&nbsp;Stud. 22261034 류소은
+        </p>
+    </div>
+    <div class="footer_right">
+        <p class="sns">
+            INSTAGRAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            BLOG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GITHUB
+        </p>
+        <div class="footer_line"></div>
+        <p class="copyright">
+            Copyright 2024 RYUCHELIN GUIDE All Rights Reserved.
+        </p>
+    </div>
+</footer><!-------footer------->
+
+<script src="scripts/general.js"></script>
+<script>
+    // back 버튼
+    let back = document.querySelector('.back');
+
+    back.addEventListener('click', () => {
+        window.location.href = "dessert_index.html";
+    });
+</script>
+</body>
+</html>

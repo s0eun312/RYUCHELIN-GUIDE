@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RYUCHELIN GUIDE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/general.css" rel="stylesheet"><!--GENERAL-->
+    <link href="css/food_sub2.css" rel="stylesheet"><!--PROFILE-->
+</head>
+<body>
+<header>
+    <h3 id="logo">
+        <a class="logoLink" href="index.html">RYUCHELIN GUIDE</a>
+    </h3>
+    <div id="nav_menu">
+        <div class="navBtn">
+            <p>MENU</p>
+            <button>
+                <img src="img/navBtn.png">
+            </button>
+        </div>
+    </div>
+</header><!-------header------->
+
+<main>
+    <nav id="nav_list">
+        <ul>
+            <li class="info">
+                <a class="navLink" href="info.html">RYUCHELIN info</a>
+            </li>
+            <li class="profile">
+                <a class="navLink" href="profile.html">RYU's Profile</a>
+            </li>
+            <li class="food">
+                <a class="navLink" href="food_index.html">Food Restaurant</a>
+            </li>
+            <li class="dessert">
+                <a class="navLink" href="dessert_index.html">Dessert Cafe</a>
+            </li>
+            <li class="recommend">
+                <a class="navLink" href="recommend.html">Recommend For Me</a>
+            </li>
+        </ul>
+    </nav><!--nav-->
+    <button id="topBtn">
+        <img src="img/topBtn.png">
+    </button><!--topBtn-->
+
+    <div id="contents">
+        <div class="back">
+            <h4>돌아가기</h4>
+            <img src="img/food/left_arrow.png">
+        </div>
+        <section class="review">
+            <img class="image" src="img/dessert/dessert1.png">
+            <article class="text">
+                <h3>이면</h3>
+                <p class="location">
+                    0507-1345-3844 | 경기 안양시 동안구 평촌대로223번길 12 5층 502호 이면
+                </p>
+                <p class="food_menu">
+                    대표 메뉴 : 푸딩빙수, 애플망고빙수
+                </p>
+                <p class="star">
+                    맛 ⭐ ⭐ ⭐ ⭐<br>
+                    비주얼 ⭐ ⭐ ⭐ ⭐ ⭐<br>
+                    서비스 ⭐ ⭐
+                </p>
+                <p class="review_text">
+                    낮에는 카페, 저녁에는 칵테일바인 곳이라 분위기가<br>
+                    시끄럽지 않고 감성있어 좋다<br>
+                    시즌에 맞춰 다양한 빙수를 파는데 푸딩빙수는 시즌 없이<br>
+                    항상 즐길 수 있고, 빙수 위에 1개 안에 1개 총 2개가 있다<br>
+                    푸딩이랑 커피시럽, 우유얼음 3 재료의 조화가 잘 어울리고<br>
+                    부드럽고 달달해서 맛있다
+                </p>
+            </article>
+        </section>
+    </div><!--contents-->
+</main><!-------main------->
+
+<footer>
+    <div class="footer_left">
+        <h3 class="footer_logo">RYUCHELIN GUIDE</h3>
+        <p class="class_name">
+            Class. 고급웹퍼블리싱&nbsp;&nbsp;&nbsp;
+            |&nbsp;&nbsp;&nbsp;Prof. 이수경 교수님&nbsp;&nbsp;&nbsp;
+            |&nbsp;&nbsp;&nbsp;Stud. 22261034 류소은
+        </p>
+    </div>
+    <div class="footer_right">
+        <p class="sns">
+            INSTAGRAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            BLOG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GITHUB
+        </p>
+        <div class="footer_line"></div>
+        <p class="copyright">
+            Copyright 2024 RYUCHELIN GUIDE All Rights Reserved.
+        </p>
+    </div>
+</footer><!-------footer------->
+
+<script src="scripts/general.js"></script>
+<script>
+    // back 버튼
+    let back = document.querySelector('.back');
+
+    back.addEventListener('click', () => {
+        window.location.href = "dessert_index.html";
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RYUCHELIN GUIDE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/general.css" rel="stylesheet"><!--GENERAL-->
+    <link href="css/recommend.css" rel="stylesheet"><!--PROFILE-->
+</head>
+<body>
+<header>
+    <h3 id="logo">
+        <a class="logoLink" href="index.html">RYUCHELIN GUIDE</a>
+    </h3>
+    <div id="nav_menu">
+        <div class="navBtn">
+            <p>MENU</p>
+            <button>
+                <img src="img/navBtn.png">
+            </button>
+        </div>
+    </div>
+</header><!-------header------->
+
+<main>
+    <nav id="nav_list">
+        <ul>
+            <li class="info">
+                <a class="navLink" href="info.html">RYUCHELIN info</a>
+            </li>
+            <li class="profile">
+                <a class="navLink" href="profile.html">RYU's Profile</a>
+            </li>
+            <li class="food">
+                <a class="navLink" href="food_index.html">Food Restaurant</a>
+            </li>
+            <li class="dessert">
+                <a class="navLink" href="dessert_index.html">Dessert Cafe</a>
+            </li>
+            <li class="recommend">
+                <a class="navLink" href="recommend.html">Recommend For Me</a>
+            </li>
+        </ul>
+    </nav><!--nav-->
+    <button id="topBtn">
+        <img src="img/topBtn.png">
+    </button><!--topBtn-->
+
+    <div id="contents">
+        <section id="right">
+            <article class="text">
+                <h3>당신의 맛집을 기다리고있습니다 📢</h3>
+                <p class="fir">맛있는 건 나눌수록, 더 맛있는 법 🍕🍕🍕</p>
+                <p class="sec">
+                    추천하고 싶은 혹은<br>
+                    대신 도전해 줬으면 하는 맛집이 있다면 공유해 주세요!<br>
+                    추천 받은 맛집은 폼 제출 시 적은 닉네임과 함께<br>
+                    저희 RYUCHELIN GUIDE에 기재됩니다
+                </p>
+                <p class="thr">e.g. 콩 먹는 콩벌레’s Pick!</p>
+            </article>
+        </section><!--right-->
+
+        <section id="left">
+            <form>
+                <table>
+                    <tr class="nickname">
+                        <td>• 닉네임</td>
+                        <td><input type="text" placeholder="기재 없을 시 익명으로 표기"></td>
+                    </tr>
+                    <tr class="category">
+                        <td>• 음식 카테고리</td>
+                        <td>
+                            <select class="food_category">
+                                <option>한식</option>
+                                <option>중식</option>
+                                <option>일식</option>
+                                <option>분식</option>
+                                <option>양식</option>
+                                <option>디저트</option>
+                                <option>기타</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="restaurant">
+                        <td>• 식당 이름 <span>＊</span></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr class="location">
+                        <td>• 식당 위치 <span>＊</span></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr class="contact">
+                        <td>• 식당 연락처</td>
+                        <td>
+                            <select>
+                                <option>02</option>
+                                <option>0507</option>
+                                <option>031</option>
+                                <option>010</option>
+                            </select>
+                            - <input class="hp" type="text">
+                            - <input class="hp" type="text">
+                        </td>
+                    </tr>
+                    <tr class="link">
+                        <td>• 식당 링크</td>
+                        <td><input type="url"></td>
+                    </tr>
+                    <tr class="reason">
+                        <td>• 추천 사유 <span>＊</span></td>
+                        <td>
+                            <textarea rows="8" cols="50"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <p class="notification">* 표시는 필수 항목입니다</p>
+                <div class="button-container">
+                    <button class="submit" type="submit">제출하기</button>
+                </div>
+            </form>
+        </section><!--left-->
+    </div>
+</main><!-------main------->
+
+<footer>
+    <div class="footer_left">
+        <h3 class="footer_logo">RYUCHELIN GUIDE</h3>
+        <p class="class_name">
+            Class. 고급웹퍼블리싱&nbsp;&nbsp;&nbsp;
+            |&nbsp;&nbsp;&nbsp;Prof. 이수경 교수님&nbsp;&nbsp;&nbsp;
+            |&nbsp;&nbsp;&nbsp;Stud. 22261034 류소은
+        </p>
+    </div>
+    <div class="footer_right">
+        <p class="sns">
+            INSTAGRAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            BLOG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GITHUB
+        </p>
+        <div class="footer_line"></div>
+        <p class="copyright">
+            Copyright 2024 RYUCHELIN GUIDE All Rights Reserved.
+        </p>
+    </div>
+</footer><!-------footer------->
+
+<script src="scripts/general.js"></script>
+<script src="scripts/recommend.js"></script>
+</body>
+</html>

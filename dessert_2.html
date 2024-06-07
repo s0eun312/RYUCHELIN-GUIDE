@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RYUCHELIN GUIDE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/general.css" rel="stylesheet"><!--GENERAL-->
+    <link href="css/food_sub2.css" rel="stylesheet"><!--PROFILE-->
+</head>
+<body>
+<header>
+    <h3 id="logo">
+        <a class="logoLink" href="index.html">RYUCHELIN GUIDE</a>
+    </h3>
+    <div id="nav_menu">
+        <div class="navBtn">
+            <p>MENU</p>
+            <button>
+                <img src="img/navBtn.png">
+            </button>
+        </div>
+    </div>
+</header><!-------header------->
+
+<main>
+    <nav id="nav_list">
+        <ul>
+            <li class="info">
+                <a class="navLink" href="info.html">RYUCHELIN info</a>
+            </li>
+            <li class="profile">
+                <a class="navLink" href="profile.html">RYU's Profile</a>
+            </li>
+            <li class="food">
+                <a class="navLink" href="food_index.html">Food Restaurant</a>
+            </li>
+            <li class="dessert">
+                <a class="navLink" href="dessert_index.html">Dessert Cafe</a>
+            </li>
+            <li class="recommend">
+                <a class="navLink" href="recommend.html">Recommend For Me</a>
+            </li>
+        </ul>
+    </nav><!--nav-->
+    <button id="topBtn">
+        <img src="img/topBtn.png">
+    </button><!--topBtn-->
+
+    <div id="contents">
+        <div class="back">
+            <h4>돌아가기</h4>
+            <img src="img/food/left_arrow.png">
+        </div>
+        <section class="review">
+            <img class="image" src="img/dessert/dessert2.png">
+            <article class="text">
+                <h3>고요베이크샵</h3>
+                <p class="location">
+                    0507-1309-7421 | 서울 마포구 동교로 144-3 단독주택
+                </p>
+                <p class="food_menu">
+                    대표 메뉴 : 소금빵, 대파크림 치즈 소금빵, 토마토 바질 소금빵
+                </p>
+                <p class="star">
+                    맛 ⭐ ⭐ ⭐ ⭐ ⭐<br>
+                    비주얼 ⭐ ⭐ ⭐ ⭐<br>
+                    서비스 ⭐ ⭐ ⭐
+                </p>
+                <p class="review_text">
+                    사장님이 유튜브를 하면서 유명해진 카페<br>
+                    음료보단 베이커리 위주이고, 소금빵이 주 대표메뉴이다<br>
+                    소금빵 종류도 엄청 다양하고, 소금빵 외에도 케이크나 쿠키,<br>
+                    휘낭시에 등 여러 종류의 디저트가 있다<br>
+                    최근엔 크루키도 판매하기 시작했는데 소금빵만큼이나 맛있어서 추천!!<br>
+                    음료도 무난한 편이고 밤라떼가 달달고소해서 맛있다<br>
+                    생각날 때마다 자주 가는 카페
+                </p>
+            </article>
+        </section>
+    </div><!--contents-->
+</main><!-------main------->
+
+<footer>
+    <div class="footer_left">
+        <h3 class="footer_logo">RYUCHELIN GUIDE</h3>
+        <p class="class_name">
+            Class. 고급웹퍼블리싱&nbsp;&nbsp;&nbsp;
+            |&nbsp;&nbsp;&nbsp;Prof. 이수경 교수님&nbsp;&nbsp;&nbsp;
+            |&nbsp;&nbsp;&nbsp;Stud. 22261034 류소은
+        </p>
+    </div>
+    <div class="footer_right">
+        <p class="sns">
+            INSTAGRAM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            BLOG&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GITHUB
+        </p>
+        <div class="footer_line"></div>
+        <p class="copyright">
+            Copyright 2024 RYUCHELIN GUIDE All Rights Reserved.
+        </p>
+    </div>
+</footer><!-------footer------->
+
+<script src="scripts/general.js"></script>
+<script>
+    // back 버튼
+    let back = document.querySelector('.back');
+
+    back.addEventListener('click', () => {
+        window.location.href = "dessert_index.html";
+    });
+</script>
+</body>
+</html>
