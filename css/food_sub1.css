@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* Pretendard 폰트 가져오기 */
+@import "pretendard.css";
+
+#contents {
+    width: 100%;
+    height: 1100px; /* 헤더 값 더하면 1166px */
+    background: #000;
+    font-family: "pretendard", sans-serif;
+    padding: 50px 0 100px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.back {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 1.3rem 0 5rem 3rem;
+    cursor: pointer;
+}
+.back h4 {
+    align-self: flex-end;
+    margin-bottom: -15px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+.back img {
+    width: 199px;
+    height: 24px;
+}
+.hover_text {
+    color: #8d8d8d;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-self: flex-start;
+    /*position: absolute;*/
+    /*top: 86px;*/
+    /*left: 310px;*/
+    /*margin-bottom: 10px;*/
+    margin: 0 0 10px 19.5rem;
+    animation: sparkle 1s ease infinite;
+}
+.food_content {
+    width: 935px;
+    height: 236px;
+    background: rgba(255, 179, 32, 0.5);
+    border-top-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    display: flex;
+    margin-bottom: 70px;
+}
+.food_content:last-child {
+    margin-bottom: 0;
+}
+.food_img {
+    width: 236px;
+    height: 236px;
+    border-bottom-left-radius: 28px;
+    cursor: pointer;
+}
+.text {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.text h3 {
+    font-size: 33px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.text p {
+    font-size: 18px;
+    font-weight: 500;
+}
+.fadeOut {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* keyframes */
+@keyframes sparkle {
+    0% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+    }
+}

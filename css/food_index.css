@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* Pretendard 폰트 가져오기 */
+@import "pretendard.css";
+
+#contents {
+    width: 100%;
+    height: 762.9px;
+    background: #000;
+    color: #fff;
+    font-family: "pretendard", sans-serif;
+    padding-top: 58px;
+    overflow: hidden; /* 하단 스크롤바 숨기기 */
+}
+#contents section {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contents section:hover {
+    opacity: .6;
+}
+#korea, #japan {
+    align-items: flex-end;
+    animation: slideInRight 1.3s ease-in forwards;
+}
+#china, #etc {
+    animation: slideInLeft 1.3s ease-in forwards;
+}
+#korea h3, #korea img, #japan h3, #japan img {
+    margin-right: 5rem;
+}
+#china h3, #etc h3 {
+    text-align: right;
+}
+#china h3, #china img, #etc h3, #etc img {
+    margin-left: 5rem;
+}
+#contents section h3 {
+    width: 228px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+}
+#contents section img {
+    width: 228px;
+    height: 24px;
+}
+#korea {
+    background-image: url("../img/food/korea.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #bebebe;
+}
+#china {
+    background-image: url("../img/food/china.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #bebebe;
+    transform: translateX(1600px);
+    animation-delay: .2s;
+}
+#japan {
+    background-image: url("../img/food/japan.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #bebebe;
+    transform: translateX(-1600px);
+    animation-delay: .5s;
+}
+#etc {
+    background-image: url("../img/food/etc.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateX(1600px);
+    animation-delay: .8s;
+}
+.fadeOut {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+/* keyframes */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(-1600px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(1600px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

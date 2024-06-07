@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* Pretendard 폰트 가져오기 */
+@import "pretendard.css";
+
+/* MAIN */
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: url("../img/index/bg5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: "pretendard", sans-serif;
+    overflow: hidden; /*스크롤바 숨김*/
+    transition: background-image 1.5s ease-in-out;
+}
+a:link, a:hover, a:visited, a:active {
+    color: #000;
+}
+
+/* navBtn */
+#navBtn {
+    display: flex;
+    padding: 3rem 0;
+}
+.menu {
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.menu section {
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    border-bottom-right-radius: 20px;
+
+    position: relative;
+    left: -100%;
+    opacity: 0;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.menu h3 {
+    margin-right: 20px;
+}
+.menu h3:hover {
+    opacity: .5;
+}
+.info {
+    background: #ffb637;
+}
+.profile {
+    background: cornflowerblue;
+}
+.food {
+    background: #4adea3;
+}
+.dessert {
+    background: gainsboro;
+}
+.recommend {
+    background: #ff80a6;
+}
+.button {
+    display: flex;
+    margin-right: 16px;
+
+    transform: translateX(-400px);
+    transition: all 0.5s ease-in-out;
+}
+.button.leftSlide {
+    transform: translateX(0);
+}
+button, p {
+
+}
+button {
+    width: 35px;
+    height: 35px;
+    margin-top: 13px;
+    background: none;
+    border: none;
+}
+.btn_img {
+    width: 31px;
+    height: 22px;
+}
+.btnText {
+    color: #a6a6a6;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 18px 0 0 7px;
+    animation: bounce .3s ease-in infinite alternate;
+}
+
+/* contents */
+#contents {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.title_out {
+    width: 1045px;
+    height: 994px;
+    border-radius: 50%;
+    /*border-top-left-radius: 50%;*/
+    /*border-bottom-left-radius: 50%;*/
+    /*margin-left: 200px;*/
+    position: fixed;
+    right: -200px;
+    display: flex;
+    align-items: center;
+
+    /* COLORS effect */
+    background: var(--light-blue);
+    background-color: var(--light-blue);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: screen;
+    animation: bg-color 24s infinite;
+}
+.title_in {
+    background: rgba(0, 0, 0, 0.67);
+    width: 742px;
+    height: 742px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 130px;
+}
+.title_in h1 {
+    color: orangered;
+    font-size: 65px;
+    font-weight: 800;
+    margin-bottom: 38px;
+}
+.title_in p {
+    color: #c0c0c0;
+    font-size: 25px;
+    font-weight: 400;
+}
+.title_in p span {
+    color: #fff;
+    font-weight: 700;
+}
+
+/* keyframes */
+/* COLORS */
+:root {
+    --orange: #ff841f;
+    --yellow: #eeff1c;
+    --light-green: #a2e29b;
+    --green: #2fcd3f;
+    --light-blue: #9cdbff;
+    --blue: #0270ff;
+    --purple: #ea67ff;
+    --pink: #ff7790;
+}
+@keyframes bg-color {
+    0% { background-color: var(--orange); }
+    12.5% { background-color: var(--yellow); }
+    25% { background-color: var(--light-green); }
+    37.5% { background-color: var(--green); }
+    50% { background-color: var(--light-blue); }
+    62.5% { background-color: var(--blue); }
+    75% { background-color: var(--purple); }
+    87.5% { background-color: var(--pink); }
+    100% { background-color: var(--orange); }
+}
+/* BOUNCE */
+@keyframes bounce {
+    0% { transform: translateX(15px); }
+    100% { transform: translateX(0); }
+}

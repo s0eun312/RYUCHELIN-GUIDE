@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* Pretendard 폰트 가져오기 */
+@import "pretendard.css";
+
+#contents {
+    width: 100%;
+    height: 856px;
+    background: #000;
+    font-family: "pretendard", sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.back {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: -50px 0 5rem 3rem;
+    cursor: pointer;
+}
+.back h4 {
+    align-self: flex-end;
+    margin-bottom: -15px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+.back img {
+    width: 199px;
+    height: 24px;
+}
+.review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image {
+    width: 477px;
+    height: 477px;
+    border-top-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    border: 1px solid #3b3b3b;
+    z-index: 1;
+}
+.text {
+    margin-left: 3rem;
+    color: #fff;
+    animation: slideInRight 1.6s ease-in-out;
+    z-index: 0;
+}
+.text h3 {
+    color: #FFB320;
+    font-size: 38px;
+    font-weight: 800;
+}
+.location {
+    color: #8d8d8d;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px 0 15px 0;
+}
+.food_menu {
+    color: #cecece;
+    font-size: 18px;
+    font-weight: 500;
+}
+.star {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.review_text {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+/* keyframes */
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
