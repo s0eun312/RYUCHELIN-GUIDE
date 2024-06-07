@@ -1,11 +1,11 @@
 // 배경 슬라이드=========================================!!
 // 이미지 배열 정리
 const images = [
-    "../img/index/bg1.png",
-    "../img/index/bg2.png",
-    "../img/index/bg3.png",
-    "../img/index/bg4.png",
-    "../img/index/bg5.png"
+    "https://s0eun312.github.io/RYUCHELIN-GUIDE/img/index/bg1.png",
+    "https://s0eun312.github.io/RYUCHELIN-GUIDE/img/index/bg2.png",
+    "https://s0eun312.github.io/RYUCHELIN-GUIDE/img/index/bg3.png",
+    "https://s0eun312.github.io/RYUCHELIN-GUIDE/img/index/bg4.png",
+    "https://s0eun312.github.io/RYUCHELIN-GUIDE/img/index/bg5.png"
 ];
 
 let currentIndex = 0;
