@@ -123,7 +123,7 @@ button {
     background-position: center;
     background-size: cover;
     background-blend-mode: screen;
-    animation: bg-color 24s infinite;
+    animation: bg-color 10s infinite;
 }
 .title_in {
     background: rgba(0, 0, 0, 0.67);
